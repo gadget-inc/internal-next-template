@@ -2,12 +2,13 @@
   "name": "internal-next-template",
   "version": "0.1.0",
   "private": true,
+  "license": "WTF",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "tsc --noEmit && prettier --loglevel warn --check \"**/*.{js,ts,tsx}\" && eslint --ext js,ts,tsx pages components utils",
-    "lint:fix": "prettier --write --loglevel warn \"**/*.{js,ts,tsx}\" && eslint --ext js,ts,tsx --fix pages components utils"
+    "lint": "tsc --noEmit && prettier --loglevel warn --check \"**/*.{js,ts,tsx}\" && eslint --ext js,ts,tsx .",
+    "lint:fix": "prettier --write --loglevel warn \"**/*.{js,ts,tsx}\" && eslint --ext js,ts,tsx --fix ."
   },
   "dependencies": {
     "@gadgetinc/themes": "^0.3.0",
@@ -26,6 +27,8 @@
     "@types/react": "^17.0.1",
     "@types/styletron-engine-atomic": "^1.1.0",
     "@types/styletron-react": "^5.0.2",
+    "eslint": "^7.19.0",
+    "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   }
 }

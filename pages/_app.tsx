@@ -1,6 +1,6 @@
 import "modern-css-reset";
-import React from "react";
 import type { AppProps /*, AppContext */ } from "next/app";
+import React from "react";
 import { Provider as StyletronProvider } from "styletron-react";
 import { styletron } from "../lib/styletron";
 
