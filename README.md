@@ -1,12 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) template project that uses Gadget's internal linting configs, TypeScript settings, and BaseUI setup.
+
+## Using
+
+Run
+
+`yarn create next-app -e https://github.com/gadget-inc/internal-next-template`
+
+to create a new Next.js app.
 
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
@@ -18,6 +24,20 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Linting
+
+To correct any errors and autoformat everything, run:
+
+```bash
+yarn lint:fix
+```
+
+To check if all the existing code lints properly, run:
+
+```bash
+yarn lint
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -26,9 +46,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
