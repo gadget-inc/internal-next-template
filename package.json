@@ -5,11 +5,27 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "tsc --noEmit && prettier --loglevel warn --check \"**/*.{js,ts,tsx}\" && eslint --ext js,ts,tsx pages components utils",
+    "lint:fix": "prettier --write --loglevel warn \"**/*.{js,ts,tsx}\" && eslint --ext js,ts,tsx --fix pages components utils"
   },
   "dependencies": {
+    "@gadgetinc/themes": "^0.3.0",
+    "baseui": "^9.109.0",
+    "modern-css-reset": "^1.4.0",
     "next": "10.0.6",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "styletron-engine-atomic": "^1.4.6",
+    "styletron-react": "^5.2.7"
+  },
+  "devDependencies": {
+    "@gadgetinc/eslint-config": "^0.2.1",
+    "@gadgetinc/prettier-config": "^0.3.0",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@types/styletron-engine-atomic": "^1.1.0",
+    "@types/styletron-react": "^5.0.2",
+    "typescript": "^4.1.3"
   }
 }
