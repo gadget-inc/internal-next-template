@@ -14,7 +14,7 @@
     "@gadgetinc/themes": "^0.3.0",
     "baseui": "^9.106.3",
     "modern-css-reset": "^1.4.0",
-    "next": "10.0.6",
+    "next": "11.1.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "styletron-engine-atomic": "^1.4.6",
